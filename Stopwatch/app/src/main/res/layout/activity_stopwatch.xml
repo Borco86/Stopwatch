@@ -7,38 +7,41 @@
     tools:context="borco86.com.github.stopwatch.StopwatchActivity">
 
     <TextView
-        android:id="@+id/time_text_view"
+        android:id="@+id/timer_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@string/default_time"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="92sp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="83dp" />
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:id="@+id/start_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start"
-        android:layout_above="@+id/stop_button"
-        android:layout_alignLeft="@+id/stop_button"
-        android:layout_alignStart="@+id/stop_button"
-        android:layout_marginBottom="17dp" />
+        android:text="@string/start"
+        android:layout_below="@+id/timer_text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
     <Button
         android:id="@+id/stop_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Stop"
-        android:layout_above="@+id/reset_button"
-        android:layout_alignLeft="@+id/reset_button"
-        android:layout_alignStart="@+id/reset_button"
-        android:layout_marginBottom="11dp" />
+        android:text="@string/stop"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/start_button"
+        android:layout_alignLeft="@+id/start_button"
+        android:layout_alignStart="@+id/start_button" />
+
     <Button
         android:id="@+id/reset_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Reset"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="120dp" />
+        android:text="@string/reset"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/stop_button"
+        android:layout_alignLeft="@+id/stop_button"
+        android:layout_alignStart="@+id/stop_button" />
 </RelativeLayout>
